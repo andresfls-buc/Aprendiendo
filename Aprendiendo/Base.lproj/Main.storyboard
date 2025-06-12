@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ntd-c0-ebT">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aprendiendo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-G9-o30">
-                                <rect key="frame" x="0.0" y="142" width="393" height="571"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-G9-o30">
+                                <rect key="frame" x="0.0" y="120" width="414" height="688"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram-logo-png_seeklogo-273545" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-3a-eB3">
-                                        <rect key="frame" x="46.666666666666657" y="0.0" width="300" height="300"/>
+                                        <rect key="frame" x="50" y="0.0" width="314" height="396"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number email, or username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-Yh-lW2">
-                                        <rect key="frame" x="96.666666666666686" y="320" width="200" height="34"/>
+                                        <rect key="frame" x="107" y="406" width="200" height="44.5"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="LfP-Ua-Euy"/>
@@ -33,7 +33,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-QB-Hpv">
-                                        <rect key="frame" x="96.666666666666686" y="374" width="200" height="34"/>
+                                        <rect key="frame" x="107" y="460.5" width="200" height="45"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="j2V-AI-mnO"/>
@@ -43,7 +43,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkA-2s-rSc">
-                                        <rect key="frame" x="96.666666666666686" y="428" width="200" height="34.333333333333314"/>
+                                        <rect key="frame" x="107" y="515.5" width="200" height="45.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="XxB-X8-Yd4"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNI-Mk-ltK">
-                                        <rect key="frame" x="103.00000000000001" y="482.33333333333337" width="187.33333333333337" height="34.333333333333371"/>
+                                        <rect key="frame" x="113.5" y="571" width="187.5" height="45.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign up for Instagram"/>
                                         <connections>
@@ -64,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgE-s3-cXO">
-                                        <rect key="frame" x="141.33333333333334" y="536.66666666666663" width="110.33333333333334" height="34.333333333333371"/>
+                                        <rect key="frame" x="152" y="626.5" width="110.5" height="61.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Need help?"/>
                                         <connections>
@@ -73,7 +73,9 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="AmD-3a-eB3" firstAttribute="leading" secondItem="u2g-G9-o30" secondAttribute="leading" constant="50" id="Bns-Su-eHp"/>
                                     <constraint firstAttribute="width" secondItem="u2g-G9-o30" secondAttribute="height" multiplier="131:222" id="SbQ-QK-ZTt"/>
+                                    <constraint firstAttribute="trailing" secondItem="AmD-3a-eB3" secondAttribute="trailing" constant="50" id="TFm-iK-5EB"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -110,7 +112,7 @@
             <objects>
                 <viewController id="3rX-NQ-SfW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kpn-JP-JYn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gjj-p5-TkY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -125,7 +127,7 @@
             <objects>
                 <viewController id="qiW-8s-bUs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zyk-dX-FEb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Jd9-jv-Doz"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -142,7 +144,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ntd-c0-ebT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C4O-ns-5Fg">
-                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="96" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
