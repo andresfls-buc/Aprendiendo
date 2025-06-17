@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-G9-o30">
-                                <rect key="frame" x="0.0" y="120" width="414" height="688"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="562.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram-logo-png_seeklogo-273545" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-3a-eB3">
-                                        <rect key="frame" x="50" y="0.0" width="314" height="396"/>
+                                        <rect key="frame" x="50" y="0.0" width="314" height="300"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number email, or username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-Yh-lW2">
-                                        <rect key="frame" x="107" y="406" width="200" height="44.5"/>
+                                        <rect key="frame" x="107" y="310" width="200" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="LfP-Ua-Euy"/>
@@ -33,7 +33,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-QB-Hpv">
-                                        <rect key="frame" x="107" y="460.5" width="200" height="45"/>
+                                        <rect key="frame" x="107" y="354" width="200" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="j2V-AI-mnO"/>
@@ -42,8 +42,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="4M3-F6-E2a">
+                                        <rect key="frame" x="112.5" y="398" width="189" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordar correo?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfY-HX-K1E">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HnO-89-Qmp">
+                                                <rect key="frame" x="140" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HnO-89-Qmp" firstAttribute="leading" secondItem="GfY-HX-K1E" secondAttribute="trailing" constant="10" id="tqf-Em-jdL"/>
+                                        </constraints>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkA-2s-rSc">
-                                        <rect key="frame" x="107" y="515.5" width="200" height="45.5"/>
+                                        <rect key="frame" x="107" y="439" width="200" height="34.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="XxB-X8-Yd4"/>
                                         </constraints>
@@ -56,7 +73,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNI-Mk-ltK">
-                                        <rect key="frame" x="113.5" y="571" width="187.5" height="45.5"/>
+                                        <rect key="frame" x="113.5" y="483.5" width="187.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign up for Instagram"/>
                                         <connections>
@@ -64,7 +81,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgE-s3-cXO">
-                                        <rect key="frame" x="152" y="626.5" width="110.5" height="61.5"/>
+                                        <rect key="frame" x="152" y="528" width="110.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Need help?"/>
                                         <connections>
@@ -90,6 +107,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="KFr-qb-8KG"/>
                     <connections>
+                        <outlet property="emailSwitch" destination="HnO-89-Qmp" id="ZHo-j4-2Wa"/>
                         <outlet property="emailTextField" destination="RRB-Yh-lW2" id="307-Jj-N8F"/>
                         <outlet property="passwordTextField" destination="XBb-QB-Hpv" id="LyY-4q-6Xc"/>
                         <segue destination="otR-4Z-b0v" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" id="BOZ-Qh-4Ss"/>
@@ -97,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.5419847328244" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="959.4202898550725" y="-28.794642857142854"/>
         </scene>
         <!--Home-->
         <scene sceneID="jh5-qd-S26">

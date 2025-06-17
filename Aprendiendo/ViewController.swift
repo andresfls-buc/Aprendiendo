@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+    @IBOutlet weak var emailSwitch: UISwitch!
     
     
     @IBAction func logInButtonAction() {
@@ -26,21 +28,71 @@ class ViewController: UIViewController {
         
         
         if email == "andres@gmail.com" && password == "123"{
+            
+            if emailSwitch.isOn {
+                //De esta manera guardamos valores con llave y valores en los UserDefault
+                storage.set(email, forKey: emailKey)
+            } else{
+                storage.removeObject(forKey: emailKey)
+            }
+            
             performSegue(withIdentifier: "home_segue", sender: nil)
         } else {
-            print("Acceso denegado")
+            showErrorDialog()
         }
     }
     
-    
+    private let emailKey = "email-key"
+    private var storage = UserDefaults.standard
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //De esta manera buscamos un string en los UserDefault y lo asignamos
+        if let storedEmail = storage.string(forKey: emailKey) {
+            emailTextField.text = storedEmail
+            emailSwitch.isOn = true
+        } else {
+            
+            emailSwitch.isOn = false
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
+    private func showErrorDialog() {
+        // Prepare the popup assets
+        let title = "Error"
+        let message = "Credenciales invalidas"
+        let image = UIImage(named: "pexels-photo-103290")
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "CANCEL") {
+            print("You canceled the car dialog.")
+        }
+
+        // Add buttons to dialog
+        // Alternatively, you can use popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButtons([buttonOne])
+
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+    }
 
 }
 
