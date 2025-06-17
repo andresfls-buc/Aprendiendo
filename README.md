@@ -4,7 +4,10 @@
 ---
 
 ## 🎥 Demo  
-![trim 9B71392D-1577-4EA5-AA8F-744616E615BE](https://github.com/user-attachments/assets/7bec3d1e-00b5-4209-aa3e-484a344ebdd3)
+
+![unnamed](https://github.com/user-attachments/assets/a16c90c7-6023-47d2-89ec-d2731f54e4b4)
+
+
 
 ---
 
